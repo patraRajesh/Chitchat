@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addmem"
+        android:title="Add Member"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mlogout"
+        android:title="LOgout" />
+    <item
+        android:id="@+id/menuaccsetting"
+        android:title="Account setting" />
+    <item
+        android:id="@+id/btnallusers"
+        android:title="allusers" />
+</menu>

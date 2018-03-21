@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.r.mychat.adduserinfo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/userstat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:id="@+id/circleImageView2" />
+
+    <EditText
+        android:id="@+id/usname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="221dp" />
+
+    <EditText
+        android:id="@+id/userstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/usname"
+        android:layout_below="@+id/usname"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/ChooseDp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userstat"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="44dp"
+        android:layout_toStartOf="@+id/circleImageView2"
+        android:text="Choose Dp" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ChooseDp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/circleImageView2"
+        android:text="Lets Start" />
+</RelativeLayout>

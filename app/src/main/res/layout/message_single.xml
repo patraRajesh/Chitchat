@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="9dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_layout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/mess_singlr_name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/message_profile_layout"
+        android:layout_toEndOf="@+id/message_profile_layout"
+        android:background="@drawable/rounded_corner2"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/mess_singlr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/mess_single_img"
+        android:layout_alignEnd="@+id/message_profile_layout" />
+
+    <TextView
+        android:id="@+id/mess_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/mess_singlr_name" />
+
+    <ImageView
+        android:id="@+id/mess_single_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_toEndOf="@+id/message_profile_layout"
+        android:layout_marginStart="17dp" />
+
+</RelativeLayout>

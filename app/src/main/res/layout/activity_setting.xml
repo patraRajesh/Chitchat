@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.r.mychat.SettingActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/circleImageView" />
+
+    <TextView
+        android:id="@+id/disName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:text="name"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/statustxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/disName"
+        android:layout_below="@+id/disName"
+        android:layout_marginTop="36dp"
+        android:text="status"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnchname"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnchname"
+        android:layout_marginEnd="27dp"
+        android:text="change Status" />
+
+    <Button
+        android:id="@+id/btnchname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/circleImageView"
+        android:layout_marginBottom="14dp"
+        android:text="Change DP" />
+
+</RelativeLayout>
